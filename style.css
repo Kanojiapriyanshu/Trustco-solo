@@ -13,6 +13,7 @@
     align-items: center;
     padding: 15px 50px;
     background: #f8f9fa;
+    position: relative;
 }
 
 .logo img {
@@ -127,3 +128,117 @@ nav ul li a {
     padding: 12px 20px;
     border-radius: 30px;
 }
+
+/* Hamburger Menu (Mobile) */
+.hamburger {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    right: -75%;
+    width: 75%;
+    height: 100%;
+    background: #002B3F;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+    transition: right 0.3s ease-in-out;
+}
+
+.mobile-menu ul {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+}
+
+.mobile-menu ul li {
+    padding: 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.mobile-menu ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+.close-btn {
+    font-size: 30px;
+    cursor: pointer;
+    align-self: flex-end;
+    margin-bottom: 20px;
+}
+
+/* Responsive Design */
+/* Responsive Design */
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav {
+        display: none;
+    }
+    .logo img {
+        height: 40px;
+        width: 150px;
+        padding: 10px;
+        padding-right: 30px;
+    }
+    
+    .auth-buttons {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .mobile-menu.active {
+        right: 0;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+        height: auto;
+    }
+
+    .hero-content {
+        order: 1; /* Ensures text appears first */
+    }
+
+    .hero-image {
+        display: flex; /* Makes images align horizontally */
+        justify-content: center;
+        align-items: center;
+        gap: 10px; /* Adds space between images */
+        width: 100%;
+        margin-top: 20px; /* Adds spacing between text and images */
+        order: 2; /* Ensures images are placed at the bottom */
+    }
+
+    .hero-image img {
+        max-width: 45%; /* Ensures images are responsive and fit side by side */
+        height: auto;
+    }
+
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+    
+    .hero-content p {
+        font-size: 1rem;
+    }
+
+    .buttons {
+        flex-direction: column; /* Stack buttons vertically */
+        gap: 10px;
+    }
+}
+
+
