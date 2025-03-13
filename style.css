@@ -328,6 +328,17 @@ nav ul li a {
         flex-direction: column;
         gap: 10px;
     }
+
+    /*for brand logo section*/
+
+    .company-logos {
+        flex-wrap: wrap; /* Allow logos to wrap in smaller screens */
+        gap: 20px; /* Reduce space between logos */
+    }
+
+    .company-logos li img {
+        max-height: 30px; /* Slightly smaller logos on mobile */
+    }
 }
 
 
