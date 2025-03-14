@@ -387,6 +387,84 @@
             width: 60px;
             cursor: pointer;
         }
+
+
+        /* Benefit Section */
+#benefit-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 5%;
+    background-color: #fff;
+}
+
+/* Container for Text & Cards */
+.benefit-container {
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+    gap: 50px;
+}
+
+/* Left Side - Text */
+.benefit-text {
+    max-width: 400px;
+}
+
+.badge {
+    display: inline-block;
+    background-color: #0d3b56;
+    color: white;
+    padding: 6px 14px;
+    border-radius: 15px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.benefit-heading {
+    font-size: 2.8rem;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #000;
+}
+
+.benefit-description {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+/* Right Side - Benefit Cards */
+.benefit-cards {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.benefit-card {
+    background-color: #f7f9fc;
+    padding: 25px;
+    border-radius: 12px;
+    text-align: left;
+    width: 220px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.benefit-card img {
+    width: 70px;
+    margin-bottom: 10px;
+}
+
+.benefit-card h3 {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.benefit-card p {
+    font-size: 1rem;
+    color: #555;
+    margin-top: 5px;
+}
         
 
 /* ============================= */
