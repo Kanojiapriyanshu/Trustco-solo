@@ -545,6 +545,40 @@
 .view-reports:hover {
     background-color: #082A40;
 }
+
+/*number section*/
+
+.stats-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 50px 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.stat {
+    flex: 1;
+}
+
+.stat h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #003366;
+    display: inline-block;
+}
+
+.stat span {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #003366;
+}
+
+.stat p {
+    font-size: 1rem;
+    color: #555;
+}
         
 
 /* ============================= */
