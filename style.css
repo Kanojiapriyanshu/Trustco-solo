@@ -465,6 +465,86 @@
     color: #555;
     margin-top: 5px;
 }
+
+
+/* Building Bridges Section */
+#building-bridge {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 5%;
+    background-color: #fff;
+}
+
+/* Container */
+.bridge-container {
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+    gap: 60px;
+}
+
+/* Left Side: Image */
+.bridge-image {
+    position: relative;
+    width: 50%;
+}
+
+.bridge-image img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+/* Award Badge (Circular) */
+.award-badge {
+    position: absolute;
+    bottom: 30px;
+    left: 480px;
+}
+
+.award-badge img {
+    width: 190px;
+}
+
+/* Right Side: Content */
+.bridge-content {
+    width: 50%;
+    margin-bottom: 55px;
+}
+
+.bridge-content h2 {
+    font-size: 2.8rem;
+    font-weight: bold;
+    color: #000;
+    
+}
+
+.bridge-content h2 span {
+    color: #7A8A99;
+}
+
+.bridge-content p {
+    font-size: 1.2rem;
+    color: #555;
+    margin: 20px 0;
+}
+
+/* Button */
+.view-reports {
+    background-color: #0D3B56;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 30px;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.view-reports:hover {
+    background-color: #082A40;
+}
         
 
 /* ============================= */
