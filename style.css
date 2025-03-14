@@ -863,6 +863,31 @@ h2 {
         flex-direction: column;
         gap: 20px;
     }
+
+    /*founder section*/
+    .founder-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .contents {
+        max-width: 100%;
+    }
+
+    .image-containers {
+        margin-top: 20px;
+    }
+
+    .founder-img {
+        width: 300px;
+    }
+
+    .team-member {
+        width: 100px;
+        height: 100px;
+        bottom: -10px;
+        left: 0px;
+    }
     
 }
 
