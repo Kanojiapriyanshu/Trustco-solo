@@ -3,21 +3,268 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing Page Title</title>
+    <title>Trustco</title>
+    
+    <!-- Linking external stylesheet for styles -->
     <link rel="stylesheet" href="style.css">
+    
+    <!-- Linking JavaScript file with defer to ensure it loads after the HTML -->
+    <script defer src="script.js"></script>
 </head>
 <body>
-    <header>
-        <!-- Placeholder: Logo and navigation -->
-        <p>Header Content</p>
+
+     <!-- Navigation Bar (Header) -->
+     <header class="navbar">
+        <!-- Logo Section -->
+        <div class="logo">
+            <img src="images/logo.png" alt="Trustco Logo">
+        </div>
+
+        <!-- Navigation Links -->
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#">Features</a></li>
+                <li><a href="#">Solutions</a></li>
+                <li><a href="#">Company</a></li>
+                <li><a href="#">Resources</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- Authentication Buttons (Login & Signup) -->
+        <div class="auth-buttons">
+            <button class="login">Login</button>
+            <button class="signup">Sign up</button>
+        </div>
+
+        <!-- Mobile Menu Toggle Button (Hamburger Icon) -->
+        <div class="hamburger" onclick="toggleMenu()">
+            ☰
+        </div>
     </header>
-    <main>
-        <!-- Placeholder: Main content -->
-        <p>Main Content</p>
-    </main>
-    <footer>
-        <!-- Placeholder: Footer content -->
-        <p>Footer Content</p>
-    </footer>
+
+    <!-- Mobile Menu (Visible on small screens) -->
+    <div class="mobile-menu" id="mobileMenu">
+        <!-- Close Button for Mobile Menu -->
+        <span class="close-btn" onclick="toggleMenu()">×</span>
+        <ul>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Solutions</a></li>
+            <li><a href="#">Company</a></li>
+            <li><a href="#">Resources</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- Hero Section (Main Banner) -->
+    <section class="hero">
+        <!-- Left Hero Image -->
+        <div class="hero-image left-image">
+            <img src="images/Hero 5.png" alt="Left Section Image">
+        </div>
+
+        <!-- Hero Content (Main Text and Buttons) -->
+        <div class="hero-content">
+            <h1>Find a High-Potential <br> Customers with <span class="highlight">Trustco.</span></h1>
+            <p>We provide sales teams and professionals with the knowledge, skill, and discipline they need to be 10x more successful.</p>
+            
+            <!-- Call-to-Action Buttons -->
+            <div class="buttons">
+                <button class="get-started">Get Started</button>
+                <button class="video-btn">&#9654; Check Our Video</button>
+            </div>
+        </div>
+
+        <!-- Right Hero Image -->
+        <div class="hero-image right-image">
+            <img src="images/Hero 6.png" alt="Right Section Image">
+        </div>
+    </section>
+
+    <section class="trusted-companies">
+        <!-- Section heading to introduce the trusted brands -->
+        <h2>Trusted by the best in the world</h2>
+        
+        <!-- List of company logos displayed in a horizontal row -->
+        <ul class="company-logos">
+            <li><img src="images/google.png" alt="Google"></li>  <!-- Google logo -->
+            <li><img src="images/atlassian.png" alt="Atlassian"></li>  <!-- Atlassian logo -->
+            <li><img src="images/canon.png" alt="Canon"></li>  <!-- Canon logo -->
+            <li><img src="images/walmart.png" alt="Walmart"></li>  <!-- Walmart logo -->
+            <li><img src="images/amazon.png" alt="Amazon"></li>  <!-- Amazon logo -->
+        </ul>
+    </section>
+
+      <!-- Training Introduction Section -->
+      <section id="training-intro">
+        <!-- Text content -->
+        <div class="intro-text-box">
+            <h1 class="intro-heading">High-Level Sales <br><span class="highlight-word">Teams & Professionals</span></h1>
+            <p class="intro-paragraph">Circuit is flexible and affordable and offers you exceptional support to achieve your career goals. 
+                Circuit is a Global training provider based across the UK that specialises.</p>
+        </div>
+
+        <!-- Video section with play button -->
+        <div id="video-section">
+            <img src="images/BG.png" alt="Training" class="video-thumbnail">
+            <div class="video-play-button">
+                <img src="images/Play.png" alt="Play Button">
+            </div>
+        </div>
+    </section>
+
+    <!--benefit section-->
+    <section id="benefit-section">
+        <div class="benefit-container">
+            <!-- Left Content -->
+            <div class="benefit-text">
+                <span class="badge">Beneficial</span>
+                <h2 class="benefit-heading">Beneficial Elements</h2>
+                <p class="benefit-description">
+                    An awesome & powerful tools for your business, increase business revenue
+                </p>
+            </div>
+    
+            <!-- Right Cards -->
+            <div class="benefit-cards">
+                <div class="benefit-card">
+                    <img src="images/Illust 1.png" alt="Happy Customers">
+                    <h3>Happy Customers</h3>
+                    <p>Productive agents are happy agents. Give them all the support tools and information they need to best serve your customers.</p>
+                </div>
+                <div class="benefit-card">
+                    <img src="images/Illust 2.png" alt="Best Integrations">
+                    <h3>Best Integrations</h3>
+                    <p>Our software is powerful enough to handle the most complex business, yet flexible enough to scale with you as you grow.</p>
+                </div>
+                <div class="benefit-card">
+                    <img src="images/Illust 3.png" alt="Grow Without Problems">
+                    <h3>Grow Without Problems</h3>
+                    <p>With evaluating in-depth variety of data sets and including the speed of tech adaptation we can build bridges between any companies and their customers.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    
+
+    <!--bridge section-->
+    <section id="building-bridge">
+        <div class="bridge-container">
+            <!-- Left Side: Image -->
+            <div class="bridge-image">
+                <img src="images/Image.png" alt="People">
+                <div class="award-badge">
+                    <img src="images/Point.png" alt="Best Award">
+                </div>
+            </div>
+    
+            <!-- Right Side: Content -->
+            <div class="bridge-content">
+                <h2>Building bridges <br> between <span>companies</span> <br> <span>and customers</span></h2>
+                <p>
+                    With evaluating in-depth variety of data sets and including the speed of tech adaptation, 
+                    we can build bridges between any companies and their customers.
+                </p>
+                <button class="view-reports">View Reports →</button>
+            </div>
+        </div>
+    </section>
+
+    
+        <!--number section-->
+        <section class="stats-section">
+            <div class="stat">
+                <h2 class="counter" data-target="65">0</h2>
+                <span>M</span>
+                <p>Generate sales</p>
+            </div>
+            <div class="stat">
+                <h2 class="counter" data-target="58">0</h2>
+                <span>%</span>
+                <p>Grew revenue</p>
+            </div>
+            <div class="stat">
+                <h2 class="counter" data-target="12">0</h2>
+                <p>Countries</p>
+            </div>
+            <div class="stat">
+                <h2 class="counter" data-target="16000">0</h2>
+                <span>+</span>
+                <p>Grew customers</p>
+            </div>
+        </section>
+
+
+        <!--founder section-->
+
+        <section class="founder-section">
+            <div class="contents">
+                <h2>Meet Our Founder</h2>
+                <p class="quote">
+                    “I think you're better off finding the money to hire someone than actually find a co-founder. 
+                    The main reason? You probably won't find someone as passionate as you are about the organization 
+                    you're building. And keep in mind, I have no clue who you are or what you're building so that's 
+                    no judgment on you or the idea, just the reality I've observed over 20 years of startups.”
+                </p>
+                <p class="founder-name"><strong>Jason Hound</strong></p>
+                <p class="founder-title">Founder of Trustco.</p>
+                <button class="cta-button">
+                    See Team Behind Our Success <span>→</span>
+                </button>
+            </div>
+        
+            <div class="image-containers">
+                <!-- <img src="images/bg-strip.png" alt="Background Strip" class="bg-strip"> -->
+                <img src="images/Man 2.png" alt="Founder Image" class="founder-img">
+                <img src="images/Circle Image.png" alt="Team Member" class="team-member">
+            </div>
+        </section>
+
+
+        <!--testimonial section-->
+        <section class="testimonial-section">
+            <div class="header">
+                <h2>We Believe people we trust</h2>
+                <a href="#" class="see-all">See All →</a>
+            </div>
+        
+            <div class="testimonials">
+                <div class="testimonial-card">
+                    <p class="quote">I'm totally unconvinced that two people can find a person they haven't known previously, and become an effective co-founder.”</p>
+                    <div class="author">
+                        <img src="images/Photo (1).png" alt="Andrew Wilkins">
+                        <div class="info">
+                            <p class="name">Andrew Wilkins</p>
+                            <p class="title">Managing Director, Yess Company</p>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="testimonial-card">
+                    <p class="quote">Easy to use, reasonably priced, and ensures I don’t drop the ball on following up with my leads!and become an effective co-founder.”</p>
+                    <div class="author">
+                        <img src="images/Photo.png" alt="Daisy Phelps">
+                        <div class="info">
+                            <p class="name">Daisy Phelps</p>
+                            <p class="title">Digital Marketing Director, Monatc</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="carousel-dots">
+                <span class="dot"></span>
+                <span class="dot active"></span>
+                <span class="dot"></span>
+            </div>
+        </section>
+        
+        
+        
+    
+
 </body>
 </html>
