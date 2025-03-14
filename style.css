@@ -485,7 +485,27 @@
     }
 
     /*for video section*/
+    .intro-text-box {
+        flex-direction: column; /* Stack elements */
+        gap: 20px;
+        text-align: center;
+        overflow-x: hidden; /* Prevents horizontal scrolling */
+    }
 
+    .intro-heading,
+    .intro-paragraph {
+        text-align: center;
+        white-space: normal; /* Allow text wrapping */
+        max-width: 90%; /* Ensure content fits screen */
+    }
+
+    .intro-heading {
+        font-size: 2.5rem; /* Reduce heading size */
+    }
+
+    .intro-paragraph {
+        font-size: 1rem;
+    }
     
 }
 
