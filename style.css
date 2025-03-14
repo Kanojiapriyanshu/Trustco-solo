@@ -679,6 +679,52 @@
     .benefit-text {
         max-width: 90%;
     }
+
+    /*for building bridge section*/
+    .bridge-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 40px;
+    }
+
+    .bridge-image {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        position: relative;
+    }
+
+    .bridge-image img {
+        width: 90%;
+        border-radius: 15px;
+    }
+
+    .award-badge {
+        left: 83%;
+        bottom: -10px;
+        transform: translateX(-50%);
+    }
+
+    .award-badge img {
+        width: 120px; /* Adjusted size for smaller screens */
+    }
+
+    .bridge-content {
+        width: 90%;
+    }
+
+    .bridge-content h2 {
+        font-size: 2.2rem;
+    }
+
+    .bridge-content p {
+        font-size: 1.1rem;
+    }
+
+    .view-reports {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
     
 }
 
