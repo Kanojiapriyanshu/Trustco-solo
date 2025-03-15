@@ -961,7 +961,82 @@ h3 {
     right: 50px;
     bottom: 1%;
 }
-        
+    
+
+
+/*footer section*/
+.footer {
+    background: #fff;
+    padding: 40px 60px;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .footer-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .footer-logo img {
+    width: 120px;
+  }
+  
+  .social-icons {
+    display: flex;
+    margin-top: 10px;
+  }
+  
+  .social-icons img {
+    width: 28px;
+    margin-right: 10px;
+  }
+  
+  .footer-center {
+    flex: 1;
+    text-align: left;
+    max-width: 500px;
+  }
+  
+  .footer-right {
+    display: flex;
+    gap: 50px;
+  }
+  
+  /* Ensure "Home" and "About Us" are in separate columns */
+  .footer-links {
+    display: flex;
+    gap: 80px;
+  }
+  
+  .footer-column {
+    min-width: 150px;
+  }
+  
+  .footer-column h4 {
+    font-weight: bold;
+  }
+  
+  .footer-column ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-column ul li {
+    margin: 5px 0;
+  }
+  
+  .footer-column ul li a {
+    text-decoration: none;
+    color: #333;
+  }
+  
 
 /* ============================= */
 /* Responsive Design */
