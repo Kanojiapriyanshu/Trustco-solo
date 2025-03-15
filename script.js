@@ -41,3 +41,6 @@ document.addEventListener("DOMContentLoaded", function () {
     window.addEventListener("scroll", onScroll);
 });
     
+
+//for displaying current year
+document.getElementById("currentYear").textContent = new Date().getFullYear();
