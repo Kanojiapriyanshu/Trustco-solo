@@ -1214,7 +1214,57 @@ h3 {
         scroll-snap-align: start;
     }
 
-    
+    /*cta section*/
+    .cta-section {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 5%;
+        height: 425px;
+    }
+
+    .cta-content {
+        max-width: 100%;
+    }
+
+    .cta-heading {
+        font-size: 26px;
+    }
+
+    .cta-btn {
+        font-size: 16px;
+        padding: 12px 20px;
+    }
+
+    .cta-subtext {
+        font-size: 14px;
+    }
+
+    .cta-image-wrapper {
+        max-width: 100%;
+        position: relative;
+        margin-top: 20px;
+    }
+
+    .cta-image {
+        width: 90%;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .cta-decor {
+        width: 20px;
+        height: 70px;
+    }
+
+    .cta-decor-yellow {
+        right: 10px;
+        bottom: 8%;
+    }
+
+    .cta-decor-blue {
+        right: 40px;
+        bottom: 5%;
+    }
     
 }
 
