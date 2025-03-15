@@ -483,7 +483,35 @@
   /* Responsive for Mobile */
   @media (max-width: 768px) {
     /* Hide desktop navigation */
-   
+    nav {
+      display: none;
+  }
+
+  /* Adjust logo size */
+  .logo img {
+      height: 40px;
+      width:150px;
+      padding: 10px;
+      padding-right: 30px;
+  }
+  
+  /* Hide auth buttons on smaller screens */
+  .auth-buttons {
+      display: none;
+  }
+
+  /* Show hamburger menu */
+  .hamburger {
+      display: block;
+  }
+
+  /* Make the mobile menu visible when active */
+  .mobile-menu.active {
+      right: 0;
+  }
+  .nav-links, .auth-buttons {
+      display: none;
+  }
 
     .help-cards {
       flex-direction: column;
