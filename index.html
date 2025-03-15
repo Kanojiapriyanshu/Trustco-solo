@@ -3,21 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing Page Title</title>
+    <title>Trustco</title>
     <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
 </head>
 <body>
-    <header>
-        <!-- Placeholder: Logo and navigation -->
-        <p>Header Content</p>
+
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="logo">
+            <img src="images/logo.png" alt="Trustco Logo">
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#">Features</a></li>
+                <li><a href="#">Solutions</a></li>
+                <li><a href="#">Company</a></li>
+                <li><a href="#">Resources</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="auth-buttons">
+            <button class="login">Login</button>
+            <button class="signup">Sign up</button>
+        </div>
+        <div class="hamburger" onclick="toggleMenu()">
+            ☰
+        </div>
     </header>
-    <main>
-        <!-- Placeholder: Main content -->
-        <p>Main Content</p>
-    </main>
-    <footer>
-        <!-- Placeholder: Footer content -->
-        <p>Footer Content</p>
-    </footer>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <span class="close-btn" onclick="toggleMenu()">×</span>
+        <ul>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Solutions</a></li>
+            <li><a href="#">Company</a></li>
+            <li><a href="#">Resources</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-image left-image">
+            <img src="images/Hero 5.png" alt="Left Section Image">
+        </div>
+
+        <div class="hero-content">
+            <h1>Find a High-Potential <br> Customers with <span class="highlight">Trustco.</span></h1>
+            <p>We provide sales teams and professionals with the knowledge, skill, and discipline they need to be 10x more successful.</p>
+            <div class="buttons">
+                <button class="get-started">Get Started</button>
+                <button class="video-btn">&#9654; Check Our Video</button>
+            </div>
+        </div>
+
+        <div class="hero-image right-image">
+            <img src="images/Hero 6.png" alt="Right Section Image">
+        </div>
+    </section>
+
 </body>
 </html>
