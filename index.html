@@ -4,16 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trustco</title>
+    
+    <!-- Linking external stylesheet for styles -->
     <link rel="stylesheet" href="style.css">
+    
+    <!-- Linking JavaScript file with defer to ensure it loads after the HTML -->
     <script defer src="script.js"></script>
 </head>
 <body>
 
-    <!-- Navbar -->
+    <!-- Navigation Bar (Header) -->
     <header class="navbar">
+        <!-- Logo Section -->
         <div class="logo">
             <img src="images/logo.png" alt="Trustco Logo">
         </div>
+
+        <!-- Navigation Links -->
         <nav>
             <ul class="nav-links">
                 <li><a href="#">Features</a></li>
@@ -23,17 +30,22 @@
                 <li><a href="#">Contact</a></li>
             </ul>
         </nav>
+
+        <!-- Authentication Buttons (Login & Signup) -->
         <div class="auth-buttons">
             <button class="login">Login</button>
             <button class="signup">Sign up</button>
         </div>
+
+        <!-- Mobile Menu Toggle Button (Hamburger Icon) -->
         <div class="hamburger" onclick="toggleMenu()">
             ☰
         </div>
     </header>
 
-    <!-- Mobile Menu -->
+    <!-- Mobile Menu (Visible in small screens) -->
     <div class="mobile-menu" id="mobileMenu">
+        <!-- Close Button for Mobile Menu -->
         <span class="close-btn" onclick="toggleMenu()">×</span>
         <ul>
             <li><a href="#">Features</a></li>
@@ -44,25 +56,45 @@
         </ul>
     </div>
 
-    <!-- Hero Section -->
+    <!-- Hero Section (Main Banner) -->
     <section class="hero">
+        <!-- Left Hero Image -->
         <div class="hero-image left-image">
             <img src="images/Hero 5.png" alt="Left Section Image">
         </div>
 
+        <!-- Hero Content (Main Text and Buttons) -->
         <div class="hero-content">
             <h1>Find a High-Potential <br> Customers with <span class="highlight">Trustco.</span></h1>
             <p>We provide sales teams and professionals with the knowledge, skill, and discipline they need to be 10x more successful.</p>
+            
+            <!-- Call-to-Action Buttons -->
             <div class="buttons">
                 <button class="get-started">Get Started</button>
                 <button class="video-btn">&#9654; Check Our Video</button>
             </div>
         </div>
 
+        <!-- Right Hero Image -->
         <div class="hero-image right-image">
             <img src="images/Hero 6.png" alt="Right Section Image">
         </div>
     </section>
+
+    <section class="trusted-companies">
+        <!-- Section heading to introduce the trusted brands -->
+        <h2>Trusted by the best in the world</h2>
+        
+        <!-- List of company logos displayed in a horizontal row -->
+        <ul class="company-logos">
+            <li><img src="images/google.png" alt="Google"></li>  <!-- Google logo -->
+            <li><img src="images/atlassian.png" alt="Atlassian"></li>  <!-- Atlassian logo -->
+            <li><img src="images/canon.png" alt="Canon"></li>  <!-- Canon logo -->
+            <li><img src="images/walmart.png" alt="Walmart"></li>  <!-- Walmart logo -->
+            <li><img src="images/amazon.png" alt="Amazon"></li>  <!-- Amazon logo -->
+        </ul>
+    </section>
+    
 
 </body>
 </html>
