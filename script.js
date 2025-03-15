@@ -44,3 +44,44 @@ document.addEventListener("DOMContentLoaded", function () {
 
 //for displaying current year
 document.getElementById("currentYear").textContent = new Date().getFullYear();
+
+
+//form functionality
+document.addEventListener("DOMContentLoaded", function () {
+    const form = document.querySelector(".contact-form");
+    const inputs = form.querySelectorAll("input, textarea");
+    const submitBtn = form.querySelector(".submit-btn");
+
+    // Add focus effect on inputs
+    inputs.forEach(input => {
+        input.addEventListener("focus", () => {
+            input.parentElement.classList.add("focused");
+        });
+
+        input.addEventListener("blur", () => {
+            if (!input.value.trim()) {
+                input.parentElement.classList.remove("focused");
+            }
+        });
+    });
+
+    // Validate checkboxes
+    submitBtn.addEventListener("click", (event) => {
+        const termsCheckbox = document.getElementById("terms");
+        if (!termsCheckbox.checked) {
+            alert("Please agree to the Terms & Conditions before submitting.");
+            event.preventDefault(); // Prevent form submission
+        }
+    });
+
+    // Test if labels are associated with inputs
+    document.querySelectorAll("label").forEach(label => {
+        const forAttribute = label.getAttribute("for");
+        if (forAttribute) {
+            const associatedInput = document.getElementById(forAttribute);
+            if (!associatedInput) {
+                console.warn(`Label with 'for="${forAttribute}"' has no associated input.`);
+            }
+        }
+    });
+});
